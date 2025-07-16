@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.summary {
+  margin-bottom: 1.5rem;
+  background: #e0f2fe;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.search,
+.filter {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 48%;
+}
+
+.list {
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
