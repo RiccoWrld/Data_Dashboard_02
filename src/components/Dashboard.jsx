@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import Filter from "./Filter";
 import SummaryStats from "./SummaryStats";
 import DataList from "./DataList";
+import Charts from "./Charts";
 
 const Dashboard = () => {
   const [pokemonList, setPokemonList] = useState([]);
@@ -62,7 +63,8 @@ const Dashboard = () => {
     const total = filteredList.length;
     const avgBaseExp =
       filteredList.reduce((sum, p) => sum + p.base_experience, 0) / total;
-    const avgHeight = filteredList.reduce((sum, p) => sum + p.height, 0) / total;
+    const avgHeight =
+      filteredList.reduce((sum, p) => sum + p.height, 0) / total;
 
     return {
       total,
@@ -74,10 +76,14 @@ const Dashboard = () => {
   if (loading) return <p>Loading Pokémon data...</p>;
 
   return (
-    <div style={{ maxWidth: 700, margin: "auto", fontFamily: "Arial, sans-serif" }}>
+    <div
+      style={{ maxWidth: 700, margin: "auto", fontFamily: "Arial, sans-serif" }}
+    >
       <h2>🦖 Pokémon Dashboard</h2>
 
       <SummaryStats summary={summary} />
+
+      <Charts pokemonList={filteredList} />
 
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 

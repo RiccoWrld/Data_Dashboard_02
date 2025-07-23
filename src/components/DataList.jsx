@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const DataList = ({ pokemonList }) => {
   if (pokemonList.length === 0) return <p>No Pokémon found.</p>;
@@ -17,10 +18,8 @@ const DataList = ({ pokemonList }) => {
             background: "#fff",
           }}
         >
-          <a
-            href={`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to={`/pokemon/${pokemon.id}`}
             style={{
               display: "flex",
               alignItems: "center",
@@ -52,7 +51,7 @@ const DataList = ({ pokemonList }) => {
                 )
                 .join(", ")}
             </div>
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
