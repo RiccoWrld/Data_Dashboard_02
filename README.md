@@ -1,14 +1,12 @@
-# Web Development Project 6 - Data Dashboard
+# Web Development Project  - Data Dashboard
 
 Submitted by: Ricardo Beale
 
 This web app: Using API to pull data on pokemon while allowing the user filter and search options with data charts for specific information on each pokemon. Also each pokemon has its own unique link when click on.
 
-Time spent: 6 hours spent in total
+## Features
 
-## Required Features
-
-The following **required** functionality is completed:
+The following functionality is completed:
 
 - [x ] **Clicking on an item in the list view displays more details about it**
   - Clicking on an item in the dashboard list navigates to a detail view for that item
@@ -22,34 +20,9 @@ The following **required** functionality is completed:
   - Each chart should describe a different aspect of the dataset
 
 
-The following **optional** features are implemented:
-
-- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data 
-  - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
-- [ ] The site allows users to toggle between different data visualizations
-  - User should be able to use some mechanism to toggle between displaying and hiding visualizations 
-
-  
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
-
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
 https://youtu.be/zyI_vaEp-kM
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
